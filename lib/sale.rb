@@ -1,5 +1,3 @@
-require 'pry'
-
 class Sale <ActiveRecord::Base
   belongs_to :cashier
   has_many :purchases
@@ -7,7 +5,7 @@ class Sale <ActiveRecord::Base
 
   def total
     self.purchases.each do |product|
-      puts (purchase.product.price * purchase.quantity)
+      purchase.product.price * purchase.quantity
     end
   end
 end

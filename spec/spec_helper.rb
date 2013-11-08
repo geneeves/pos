@@ -1,7 +1,6 @@
 require 'active_record'
 require 'rspec'
 require 'shoulda-matchers'
-
 require 'product'
 require 'cashier'
 require 'sale'
